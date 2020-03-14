@@ -1,0 +1,60 @@
+.header-3 {
+  font-size: 2rem;
+  margin-left: 2rem;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $primary-color;
+    cursor: pointer;
+  }
+}
+
+.heading-4 {
+  backface-visibility: hidden;
+  font-size: 4rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include bgGradientForTexts;
+
+  animation: moveInLeft 1s ease-out;
+  @media screen and (max-width: $bp-medium2) {
+    font-size: 3rem;
+  }
+}
+
+.paragraph {
+  backface-visibility: hidden;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: $primary-color;
+
+  animation: moveInRight 1s ease-out;
+}
+
+.btn {
+  backface-visibility: hidden;
+  animation: moveInBottom 1s ease-out 0.7s;
+  animation-fill-mode: backwards; /* იმისათვის რომ ანიმაციის დაწყებისას ბათონი არ ჩანდეს */
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+    padding: 1.3rem 3rem;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+  }
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+}

@@ -1,0 +1,123 @@
+/*--------------------------- VARIABLES ----------------------*/
+$primary-color: #8ab92d;
+$primary-color-dark: #0b6623;
+
+$title-color: #222222;
+$text-color: #777777;
+
+$white: #fff;
+$offwhite: #f9f9ff;
+$black: #222;
+$blue-dark: #101d2c;
+
+$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+$shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.07);
+
+/*--------------------------- FONT VARIABLES ----------------------*/
+$font-primary: 'Poppins', sans-serif;
+
+// BEAKPOINTS
+$bp-largest: 75em; //1200px
+
+$bp-large: 62.5em; //1000px
+
+$bp-medium: 56.25em; //900px
+$bp-medium2: 50em; // 800px
+$bp-medium3: 43.75em; // 700px
+
+$bp-small: 37.5em; //600px
+$bp-small2: 31.25em; //500px
+$bp-smallest: 28.125em; //450px
+$bp-smallest2: 21.875em; //350px
+
+//////////////////////////////////////////////////////////////
+///// MIXINS
+@mixin bgGradientForTexts {
+  background-image: linear-gradient(
+    to right bottom,
+    $primary-color 20%,
+    $primary-color-dark 70%
+  );
+  background-clip: text; // defines where should be background
+  color: transparent; // text has no color its inivsible
+}
+
+@mixin centerItem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*--------------------------- GLOBAL CONFIG ----------------------*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; // inherits from html tag
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5%
+  scroll-behavior: smooth;
+
+  @media screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    font-size: 37.5%; // 6px / 16 = 37.5%
+  }
+
+  @media screen and (max-width: $bp-small2) {
+    font-size: 25%; // 4px / 16 = 37.5%
+  }
+}
+
+body {
+  font-family: $font-primary;
+  color: $white;
+  font-weight: 300;
+  line-height: 1.6;
+
+  ::selection {
+    // whenever user selects text
+    // styles change
+    background-color: $primary-color;
+    color: $text-color;
+  }
+}
+/*--------------------------- GLOBAL CONFIG-END ----------------------*/
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content 80vh repeat(3, min-content);
+  grid-template-columns:
+    minmax(6rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+
+  gap: 7rem;
+  margin: 2rem;
+  box-shadow: $shadow-light;
+
+  @media screen and (max-width: $bp-largest) {
+    grid-template-rows: 70vh min-content 60vh repeat(3, min-content);
+  }
+
+  @media screen and (max-width: $bp-medium2) {
+    margin: 0;
+  }
+
+  @media screen and (max-width: $bp-medium2) {
+    grid-template-rows: 50vh min-content 60vh repeat(3, min-content);
+  }
+
+  @media screen and (max-width: $bp-small2) {
+    grid-template-rows: 40vh min-content 60vh repeat(3, min-content);
+  }
+}

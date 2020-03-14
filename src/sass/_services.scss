@@ -1,0 +1,85 @@
+.services {
+  grid-column: 1 / -1;
+  grid-row: 3/5;
+  padding: 5rem;
+
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  row-gap: 5rem;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($blue-dark, 0.9),
+      rgba($primary-color-dark, 0.95)
+    ),
+    url('../assets/app-dev.png');
+  background-size: contain;
+  background-position: center;
+}
+
+.boxes {
+  display: grid;
+  padding: 10rem 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 8rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: repeat(3, min-content);
+    grid-template-columns: 1fr;
+    width: 70%;
+    justify-self: center;
+    padding: 5rem;
+  }
+}
+
+.services-box {
+  display: grid;
+  padding: 5rem 2rem;
+  grid-template-rows: 5rem repeat(2, min-content);
+  row-gap: 2rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(
+    170deg,
+    rgba($blue-dark, 0.98) 50%,
+    rgba($black, 0.95) 50%
+  );
+  box-shadow: $shadow-dark;
+  transition: all 0.2s;
+
+  //transform: translateY(30%);
+
+  &__name {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    @include bgGradientForTexts;
+
+    @media screen and (max-width: $bp-large) {
+      font-size: 2rem;
+    }
+  }
+
+  &__text {
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  &__icon {
+    transform: translateY(-100%);
+    width: 8rem;
+    height: 8rem;
+    justify-self: center;
+    color: $primary-color;
+  }
+  &__item {
+    padding: 1rem 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    color: $text-color;
+    border-bottom: 1px solid grey;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

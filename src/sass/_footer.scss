@@ -1,0 +1,101 @@
+.footer {
+  padding: 4rem 8rem;
+  background-color: $title-color;
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-rows: 1fr 4rem;
+  justify-content: center;
+
+  &__connect {
+    padding: 2rem 5rem;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem;
+
+    @media screen and (max-width: $bp-medium3) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(min-content);
+    }
+
+    .section-header {
+      font-size: 2rem;
+      letter-spacing: 0.5rem;
+      text-transform: uppercase;
+      font-family: sans-serif;
+      font-weight: bold;
+
+      @media screen and (max-width: $bp-medium3) {
+        text-align: center;
+      }
+    }
+
+    .follow {
+      &__icons {
+        display: grid;
+        grid-template-columns: repeat(4, min-content);
+        padding-top: 2rem;
+      }
+
+      &__icon {
+        margin-left: 2rem;
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .contacts {
+      &__details {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      &__detail {
+        display: flex;
+        align-items: center;
+      }
+
+      &__icon {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 2rem;
+        cursor: pointer;
+      }
+
+      &__link:active,
+      &__link:link {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: inherit;
+        cursor: pointer;
+      }
+
+      &__icon:hover {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__copy {
+    padding: 3rem;
+    text-align: center;
+    font-size: 1.3rem;
+
+    span {
+      color: $primary-color;
+      transition: all 0.3s;
+
+      &:hover {
+        border-bottom: 2px solid $primary-color-dark;
+      }
+    }
+  }
+}
