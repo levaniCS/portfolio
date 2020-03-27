@@ -14,12 +14,32 @@ const Footer = () => {
       <div className='footer__connect'>
         <div className='follow'>
           <h3 className='section-header'>Follow me</h3>
-          <p>let us be social</p>
+          <p>let me be social</p>
           <div className='follow__icons'>
-            <FaFacebookF className='follow__icon' />
-            <FaGithub className='follow__icon' />
-            <FaLinkedinIn className='follow__icon' />
-            <FaTwitter className='follow__icon' />
+            <a
+              href='https://www.facebook.com/levani.sarishvili.96'
+              target='_blank'
+              rel='noopener noreferrer'>
+              <FaFacebookF className='follow__icon' />
+            </a>
+            <a
+              href='https://github.com/levaniCS'
+              target='_blank'
+              rel='noopener noreferrer'>
+              <FaGithub className='follow__icon' />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/levani-sarishvili-632747199/'
+              target='_blank'
+              rel='noopener noreferrer'>
+              <FaLinkedinIn className='follow__icon' />
+            </a>
+            <a
+              href='https://twitter.com/levani3105'
+              target='_blank'
+              rel='noopener noreferrer'>
+              <FaTwitter className='follow__icon' />
+            </a>
           </div>
         </div>
         <div className='contacts'>
@@ -44,7 +64,7 @@ const Footer = () => {
       </div>
       <p className='footer__copy'>
         Copyright &copy; All rights reserved | This website is made by{' '}
-        <span>Levan Sarishvili</span>
+        <a href='#home'>Levan Sarishvili</a>
       </p>
     </footer>
   );

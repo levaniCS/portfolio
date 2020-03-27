@@ -3,12 +3,12 @@ import LineProgresBar from './LineProgressBar';
 
 class Skills extends Component {
   state = {
-    html: 90,
-    css: 85,
-    sass: 75,
-    js: 65,
-    react: 75,
-    rn: 60
+    html: 95,
+    css: 87,
+    sass: 80,
+    js: 70,
+    react: 76,
+    rn: 65
   };
 
   render() {

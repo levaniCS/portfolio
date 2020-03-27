@@ -13,10 +13,10 @@ const AboutMe = () => {
       <div className='about__text'>
         <h3 className='heading-4'>About Me</h3>
         <p className='paragraph'>
-          Nature, in the broadest sense, is the natural, physical, or material
-          world or universe. "Nature" can refer to the phenomena of the physical
-          world, and also to life in general "Nature" can refer to the phenomena
-          of the physical world, and also to life.
+          Hi, I'm levani, second year unuversity student. I study at Tbilisi
+          state University - Computer science. I have almost One year working
+          experience as front-end developer. I’m highly motivated and have
+          willing to study modern technologyes and improve my skills.
         </p>
       </div>
     </section>

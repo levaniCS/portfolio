@@ -11,6 +11,7 @@ $black: #222;
 $blue-dark: #101d2c;
 
 $shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+$shadow-medium: 0 2rem 6rem rgba(0, 0, 0, 0.15);
 $shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.07);
 
 /*--------------------------- FONT VARIABLES ----------------------*/
@@ -32,6 +33,7 @@ $bp-smallest2: 21.875em; //350px
 
 //////////////////////////////////////////////////////////////
 ///// MIXINS
+
 @mixin bgGradientForTexts {
   background-image: linear-gradient(
     to right bottom,
@@ -47,6 +49,25 @@ $bp-smallest2: 21.875em; //350px
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+@mixin AnimatedOutline {
+  &::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: $primary-color;
+    transition: width 0.4s;
+  }
+
+  &:hover {
+    color: $primary-color;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 /*--------------------------- GLOBAL CONFIG ----------------------*/
@@ -93,6 +114,7 @@ body {
 
 .container {
   display: grid;
+  position: relative;
   grid-template-rows: 80vh min-content 80vh repeat(3, min-content);
   grid-template-columns:
     minmax(6rem, 1fr) [center-start] repeat(
@@ -113,11 +135,38 @@ body {
     margin: 0;
   }
 
-  @media screen and (max-width: $bp-medium2) {
-    grid-template-rows: 50vh min-content 60vh repeat(3, min-content);
+  @media screen and (max-width: $bp-medium3) {
+    grid-template-rows: 60vh min-content 60vh repeat(3, min-content);
   }
 
   @media screen and (max-width: $bp-small2) {
     grid-template-rows: 40vh min-content 60vh repeat(3, min-content);
+  }
+}
+
+.upBtn {
+  position: fixed;
+  z-index: 100;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  bottom: 7rem;
+  right: 5rem;
+  padding: 1rem;
+  overflow: hidden;
+  box-shadow: $shadow-light;
+
+  border: 2px solid $text-color;
+
+  &:hover {
+    & > * {
+      fill: $primary-color-dark;
+    }
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+    fill: $text-color;
   }
 }
