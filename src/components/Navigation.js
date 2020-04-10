@@ -29,8 +29,8 @@ const Navigation = () => {
   return (
     <div className={`header__navsection${isSticky ? ' sticky' : ''}`}>
       <h3 className='header-3'>Levani</h3>
-      <nav class='navigation'>
-        <FaBars class='icon' size={25} onClick={handleToggle} />
+      <nav className='navigation'>
+        <FaBars className='icon' size={25} onClick={handleToggle} />
         <ul
           className={`header__nav ${isExpanded ? 'is-expanded' : ''}`}
           id='navbar'>

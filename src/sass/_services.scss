@@ -44,9 +44,6 @@
     rgba($black, 0.95) 50%
   );
   box-shadow: $shadow-dark;
-  transition: all 0.2s;
-
-  //transform: translateY(30%);
 
   &__name {
     text-transform: uppercase;
@@ -77,9 +74,5 @@
     font-weight: 500;
     color: $text-color;
     border-bottom: 1px solid grey;
-  }
-
-  &:hover {
-    transform: scale(1.05);
   }
 }

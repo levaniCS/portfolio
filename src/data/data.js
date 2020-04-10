@@ -1,4 +1,5 @@
 import Project from '../models/project';
+import Service from '../models/service';
 
 export const PROJECTS = [
   new Project(
@@ -32,9 +33,9 @@ export const PROJECTS = [
   new Project(
     'c5',
     'mu',
-    'Components',
-    'https://miro.medium.com/max/1024/1*84so0UfC5rPLDZDdhLK_Hg.png',
-    'https://levanics.github.io/components/'
+    'Fylo',
+    'https://cdn.wallpapersafari.com/91/94/PmdesY.png',
+    'https://levanics.github.io/fylo/'
   ),
   new Project(
     'c6',
@@ -70,6 +71,13 @@ export const PROJECTS = [
     'COVID-19',
     'https://media1.s-nbcnews.com/j/newscms/2020_10/3257296/200305-china-coronavirus-mc-1506_9e40e4e88e1b8a2ed94c1da773f33b62.fit-760w.JPG',
     'https://levanics.github.io/covid-dashboard/'
+  ),
+  new Project(
+    'c101',
+    'react',
+    'Pig-Game',
+    'https://cdn.wallpapersafari.com/30/43/Q6x0UJ.jpg',
+    'https://levanics.github.io/pig-game/'
   ),
   new Project(
     'c11',
@@ -113,4 +121,25 @@ export const PROJECTS = [
     'https://i.pinimg.com/originals/4e/a9/2f/4ea92f247d44204977bf9a95ab34cb02.jpg',
     'https://exp.host/@levanisar/books-app'
   ),
+];
+
+export const SERVICES = [
+  new Service('c1', 'Front-end development', 'html5', [
+    'Modern CSS technologies',
+    'Highly responsive layout',
+    'Reusable and Maintainable code',
+    'Clear and Modern Animations',
+  ]),
+  new Service('c2', 'Web Applications', 'web', [
+    'Develop new user-facing features',
+    'Optimize application for maximum speed and scalability',
+    'Maintainable and Reusable code',
+    'Plan and accommodate all mediums, screen sizes and device types',
+  ]),
+  new Service('c3', 'Mobile Applications', 'mobile', [
+    'React Native development for iPhones, Tablets, and Android',
+    'Diagnose and fix bugs and performance issues',
+    'Experience integrating with third-party libraries, frameworks, and API',
+    'Publishing Your app',
+  ]),
 ];
