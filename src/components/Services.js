@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SERVICES } from '../data/data';
+import { SERVICES } from '../data/data__services';
 import ServiceItem from './serviceItem';
 
 const Services = () => {

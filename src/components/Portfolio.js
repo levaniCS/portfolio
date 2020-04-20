@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import ProjectItem from '../components/ProjectItem';
-import { PROJECTS } from '../data/data';
+import { PROJECTS } from '../data/data__projects';
 
 class Portfolio extends Component {
   state = {
-    current: 'markup'
+    current: 'markup',
   };
 
   handlechange = (text) => {

@@ -1,5 +1,4 @@
 import Project from '../models/project';
-import Service from '../models/service';
 
 export const PROJECTS = [
   new Project(
@@ -36,6 +35,13 @@ export const PROJECTS = [
     'Fylo',
     'https://cdn.wallpapersafari.com/91/94/PmdesY.png',
     'https://levanics.github.io/fylo/'
+  ),
+  new Project(
+    'c51',
+    'mu',
+    'Manage',
+    'https://t8f8b3g9.stackpathcdn.com/wp-content/uploads/2019/01/task-management-skills-blog-header-1.png',
+    'https://levanics.github.io/manage/'
   ),
   new Project(
     'c6',
@@ -80,6 +86,20 @@ export const PROJECTS = [
     'https://levanics.github.io/pig-game/'
   ),
   new Project(
+    'c102',
+    'react',
+    'Todo-App',
+    'https://onlyvectorbackgrounds.com/wp-content/uploads/2019/03/Subtle-Lines-Abstract-Gradient-Background-Orange.jpg',
+    'https://levanics.github.io/todo-app/'
+  ),
+  new Project(
+    'c103',
+    'react',
+    'Budgety',
+    'https://wallpaperaccess.com/full/732220.jpg',
+    'https://levanics.github.io/budgety/'
+  ),
+  new Project(
     'c11',
     'rn',
     'Meals',
@@ -121,25 +141,4 @@ export const PROJECTS = [
     'https://i.pinimg.com/originals/4e/a9/2f/4ea92f247d44204977bf9a95ab34cb02.jpg',
     'https://exp.host/@levanisar/books-app'
   ),
-];
-
-export const SERVICES = [
-  new Service('c1', 'Front-end development', 'html5', [
-    'Modern CSS technologies',
-    'Highly responsive layout',
-    'Reusable and Maintainable code',
-    'Clear and Modern Animations',
-  ]),
-  new Service('c2', 'Web Applications', 'web', [
-    'Develop new user-facing features',
-    'Optimize application for maximum speed and scalability',
-    'Maintainable and Reusable code',
-    'Plan and accommodate all mediums, screen sizes and device types',
-  ]),
-  new Service('c3', 'Mobile Applications', 'mobile', [
-    'React Native development for iPhones, Tablets, and Android',
-    'Diagnose and fix bugs and performance issues',
-    'Experience integrating with third-party libraries, frameworks, and API',
-    'Publishing Your app',
-  ]),
 ];

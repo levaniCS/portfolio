@@ -26,6 +26,8 @@ const Navigation = () => {
     };
   }, []);
 
+  const isCancelVisible = window.innerWidth < 600 ? true : false;
+
   return (
     <div className={`header__navsection${isSticky ? ' sticky' : ''}`}>
       <h3 className='header-3'>Levani</h3>
@@ -52,7 +54,10 @@ const Navigation = () => {
           <li className='item'>
             <a href='#contact'>Contact</a>
           </li>
-          <li className='item close' onClick={handleToggle}>
+          <li
+            style={{ display: isCancelVisible ? 'block' : 'none' }}
+            className='item close'
+            onClick={handleToggle}>
             Close
           </li>
         </ul>

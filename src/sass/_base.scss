@@ -1,74 +1,4 @@
-/*--------------------------- VARIABLES ----------------------*/
-$primary-color: #8ab92d;
-$primary-color-dark: #0b6623;
-
-$title-color: #222222;
-$text-color: #777777;
-
-$white: #fff;
-$offwhite: #f9f9ff;
-$black: #222;
-$blue-dark: #101d2c;
-
-$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-$shadow-medium: 0 2rem 6rem rgba(0, 0, 0, 0.15);
-$shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.07);
-
-/*--------------------------- FONT VARIABLES ----------------------*/
-$font-primary: 'Poppins', sans-serif;
-
-// BEAKPOINTS
-$bp-largest: 75em; //1200px
-
-$bp-large: 62.5em; //1000px
-
-$bp-medium: 56.25em; //900px
-$bp-medium2: 50em; // 800px
-$bp-medium3: 43.75em; // 700px
-
-$bp-small: 37.5em; //600px
-$bp-small2: 31.25em; //500px
-$bp-smallest: 28.125em; //450px
-$bp-smallest2: 21.875em; //350px
-
-//////////////////////////////////////////////////////////////
-///// MIXINS
-
-@mixin bgGradientForTexts {
-  background-image: linear-gradient(
-    to right bottom,
-    $primary-color 20%,
-    $primary-color-dark 70%
-  );
-  background-clip: text; // defines where should be background
-  color: transparent; // text has no color its inivsible
-}
-
-@mixin centerItem {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@mixin AnimatedOutline {
-  &::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: $primary-color;
-    transition: width 0.4s;
-  }
-
-  &:hover {
-    color: $primary-color;
-  }
-
-  &:hover::after {
-    width: 100%;
-  }
-}
+@import 'variablesAndMixins';
 
 /*--------------------------- GLOBAL CONFIG ----------------------*/
 *,
@@ -107,7 +37,7 @@ body {
     // whenever user selects text
     // styles change
     background-color: $primary-color;
-    color: $text-color;
+    color: $offwhite;
   }
 }
 /*--------------------------- GLOBAL CONFIG-END ----------------------*/
