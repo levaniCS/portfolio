@@ -44,6 +44,13 @@ export const PROJECTS = [
     'https://levanics.github.io/manage/'
   ),
   new Project(
+    'c52',
+    'mu',
+    'EasyBank',
+    'https://i.pinimg.com/originals/fe/fa/09/fefa09b1b88354511c09126d06d9da70.jpg',
+    'https://levanics.github.io/easybank/'
+  ),
+  new Project(
     'c6',
     'react',
     'Burger',
@@ -98,6 +105,13 @@ export const PROJECTS = [
     'Budgety',
     'https://wallpaperaccess.com/full/732220.jpg',
     'https://levanics.github.io/budgety/'
+  ),
+  new Project(
+    'c104',
+    'react',
+    'Forkify',
+    'https://prod-wolt-venue-images-cdn.wolt.com/5ce65294b98140c2f8124301/88237436-62ce-11ea-8ac9-0a58647cb712_463A3869%20%281%29.jpg',
+    'https://levanics.github.io/forkify/'
   ),
   new Project(
     'c11',
