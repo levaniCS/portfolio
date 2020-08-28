@@ -13,10 +13,8 @@ const AboutMe = () => {
       <div className='about__text'>
         <h3 className='heading-4'>About Me</h3>
         <p className='paragraph'>
-          Hi, I'm levani, second year unuversity student. I study at Tbilisi
-          state University - Computer science. I have almost One year working
-          experience as front-end developer. I’m highly motivated and have
-          willing to study modern technologyes and improve my skills.
+          Hi, I'm levani, Web and Mobile applications developer. I have 2.5 years working experience.
+          Keep working and lerning some amazing stuffs. Currently i'm Working as Web developer in <a className='paragraph' rel="noopener noreferrer" target="_blank" href="https://vobi.io/">VOBI</a>
         </p>
       </div>
     </section>

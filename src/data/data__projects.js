@@ -155,4 +155,11 @@ export const PROJECTS = [
     'https://i.pinimg.com/originals/4e/a9/2f/4ea92f247d44204977bf9a95ab34cb02.jpg',
     'https://exp.host/@levanisar/books-app'
   ),
+  new Project(
+    'n1',
+    'node',
+    'Natours',
+    'https://imgproxy.natucate.com/PAd5WVIh-tjEKQM4Z6tm6W1J4Yc2JIYWrKEroD1c7mM/rs:fill/g:ce/w:3840/h:2160/aHR0cHM6Ly93d3cubmF0dWNhdGUuY29tL21lZGlhL3BhZ2VzL3JlaXNlYXJ0ZW4vNmMwODZlYmEtNzk3Yi00ZDVjLTk2YTItODhhNGM4OWUyODdlLzM3NjYwMTQ2NjMtMTU2NzQzMzYxMi8xMl9kYW5pZWxfY2FuX2JjLTIwNy5qcGc',
+    'https://natours-levani.herokuapp.com/'
+  ),
 ];

@@ -24,8 +24,8 @@ class Portfolio extends Component {
       data = data.filter((item) => item.catId === 'react');
     } else if (this.state.current === 'rn') {
       data = data.filter((item) => item.catId === 'rn');
-    } else {
-      data = PROJECTS;
+    } else if (this.state.current === 'node') {
+      data = data.filter(item => item.catId === 'node')
     }
 
     return (
@@ -55,6 +55,12 @@ class Portfolio extends Component {
             className='names__item'
             style={this.checkColor('rn')}>
             React-native
+          </li>
+          <li
+            onClick={() => this.handlechange('node')}
+            className='names__item'
+            style={this.checkColor('node')}>
+            Node JS
           </li>
         </ul>
         <div className='projects'>
