@@ -1,10 +1,10 @@
 class Skill {
-  constructor(id, name, imgPath, altName, percentage) {
+  constructor(id, name, imgPath, altName, catId) {
     this.id = id;
     this.name = name;
     this.imgPath = imgPath;
     this.altName = altName;
-    this.percentage = percentage;
+    this.catId = catId;
   }
 }
 

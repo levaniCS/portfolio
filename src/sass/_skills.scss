@@ -7,35 +7,31 @@
 
   &__box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     justify-items: center;
     column-gap: 7rem;
     row-gap: 5rem;
     margin: 0.5rem;
 
-    @media screen and (max-width: 400px) {
-      grid-template-columns: 1fr;
-    }
 
     .item {
       display: grid;
-      grid-template-columns: repeat(2, max-content) 12rem;
       align-items: center;
-      justify-content: center;
-      column-gap: 2rem;
-      border-radius: 4rem;
+      gap: 2rem;
+      justify-items: center;
+      border-radius: 3rem;
       padding: 3rem 5rem;
       transition: all 0.3s;
       cursor: pointer;
 
-      margin: 1rem;
       box-shadow: $shadow-light;
       min-height: 10rem;
+      min-width: 20rem;
       color: $text-color;
 
       &__name {
         width: 100%;
-        font-size: 1.1rem;
+        font-size: 1.4rem;
         font-weight: 600;
         text-transform: uppercase;
         text-align: center;

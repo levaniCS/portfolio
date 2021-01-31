@@ -40,7 +40,7 @@ export const PROJECTS = [
     'c51',
     'mu',
     'Manage',
-    'https://t8f8b3g9.stackpathcdn.com/wp-content/uploads/2019/01/task-management-skills-blog-header-1.png',
+    'https://welpmagazine.com/wp-content/uploads/2020/09/management.jpeg',
     'https://levanics.github.io/manage/'
   ),
   new Project(
@@ -63,6 +63,13 @@ export const PROJECTS = [
     'blog',
     'https://vloggerfaire.com/wp-content/uploads/2017/07/blog-laptop-copy-2-1.jpg',
     'https://levanics.github.io/blogapp/'
+  ),
+  new Project(
+    'c71',
+    'react',
+    'Kvalifika',
+    'https://chandler.on.ge/2020/12/04/1607032522.jpg',
+    'https://www.kvalifika.com/'
   ),
   new Project(
     'c8',
@@ -131,7 +138,7 @@ export const PROJECTS = [
     'c13',
     'rn',
     'Shop',
-    'https://online-shop.ge/wp-content/uploads/2019/08/cropped-online-shop.ge-logo.png',
+    'https://static.toiimg.com/thumb/resizemode-75,msid-65119881,width-800,height-450/65119881.jpg',
     'https://expo.io/@levanisar/shopapp'
   ),
   new Project(

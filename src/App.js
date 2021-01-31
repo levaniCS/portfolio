@@ -34,9 +34,9 @@ const App = () => {
         </a>
       ) : null}
       <Header />
+      <Skills />
       <AboutMe />
       <Services />
-      <Skills />
       <Portfolio />
       <Footer />
     </div>
