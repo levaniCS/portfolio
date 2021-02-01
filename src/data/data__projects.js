@@ -58,11 +58,11 @@ export const PROJECTS = [
     'https://burgerapp-67571.firebaseapp.com/'
   ),
   new Project(
-    'c7',
+    'c111',
     'react',
-    'blog',
-    'https://vloggerfaire.com/wp-content/uploads/2017/07/blog-laptop-copy-2-1.jpg',
-    'https://levanics.github.io/blogapp/'
+    'Talktive',
+    'https://kellyjaggersblog.files.wordpress.com/2016/01/online-communication.jpg?w=626',
+    'https://jolly-wiles-d92a29.netlify.app/'
   ),
   new Project(
     'c71',
@@ -168,5 +168,12 @@ export const PROJECTS = [
     'Natours',
     'https://imgproxy.natucate.com/PAd5WVIh-tjEKQM4Z6tm6W1J4Yc2JIYWrKEroD1c7mM/rs:fill/g:ce/w:3840/h:2160/aHR0cHM6Ly93d3cubmF0dWNhdGUuY29tL21lZGlhL3BhZ2VzL3JlaXNlYXJ0ZW4vNmMwODZlYmEtNzk3Yi00ZDVjLTk2YTItODhhNGM4OWUyODdlLzM3NjYwMTQ2NjMtMTU2NzQzMzYxMi8xMl9kYW5pZWxfY2FuX2JjLTIwNy5qcGc',
     'https://natours-levani.herokuapp.com/'
+  ),
+  new Project(
+    'n2',
+    'node',
+    'Talktive',
+    'https://kellyjaggersblog.files.wordpress.com/2016/01/online-communication.jpg?w=626',
+    'https://jolly-wiles-d92a29.netlify.app/'
   ),
 ];
