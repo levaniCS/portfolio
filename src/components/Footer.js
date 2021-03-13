@@ -47,8 +47,8 @@ const Footer = () => {
           <div className='contacts__details'>
             <div className='contacts__detail'>
               <FaPhone className='contacts__icon' />
-              <a className='contacts__link' href='tel:598-16-05-32'>
-                598-16-05-32
+              <a className='contacts__link' href='tel:571-19-90-69'>
+                571-19-90-69
               </a>
             </div>
             <div className='contacts__detail'>
