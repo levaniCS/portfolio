@@ -2,5 +2,5 @@
 
 
 Build:
-  npm run predeploy
-  npm run deploy
+  **npm run predeploy
+  **npm run deploy
